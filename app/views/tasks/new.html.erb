@@ -1,7 +1,7 @@
 <h1>Create A New Task</h1>
 
 <h3><%= link_to "Back To Task", tasks_path %></h3>
-<%= form_with model: @task do |f| %>
+<%= form_with model: @task , class: 'form-control' do |f| %>
   <%= f.label :title %><br>
   <%= f.text_field :title %><br>
   <%= f.label :details %><br>
